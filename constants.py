@@ -1,18 +1,17 @@
 import os
 import cv2
 
-# PATHS
-ROOT_PATH = os.getcwd()
-FRAME_ACTIONS_PATH = os.path.join(ROOT_PATH, "frame_actions")
-DATA_PATH = os.path.join(ROOT_PATH, "data")
+# Este script contine  variables que se llegan a utilizar para ejecutar el main.py
+
+# Rutas
+ROOT_PATH = r"C:\Users\Usuario\Desktop\Entornos virtuales\Prototipo_LsCh\Prototipo_v2"
+DATA_PATH = os.path.join(ROOT_PATH, "data2")
 MODELS_PATH = os.path.join(ROOT_PATH, "models")
 
+# Variables correspondientes a la cantidad minima y máxima de frames y la cantidad de puntos clave
 MAX_LENGTH_FRAMES = 15
 LENGTH_KEYPOINTS = 1662
 MIN_LENGTH_FRAMES = 5
-MODEL_NAME = f"actions_{MAX_LENGTH_FRAMES}.keras"
 
-# SHOW IMAGE PARAMETERS
-FONT = cv2.FONT_HERSHEY_PLAIN
-FONT_SIZE = 1.5
-FONT_POS = (5, 30)
+# Nombre del modelo
+MODEL_NAME = 'lsch_24.h5'
